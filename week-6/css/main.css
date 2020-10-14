@@ -47,7 +47,16 @@ nav ul a{
     background-size: cover;
     /* aditional style to make ttext visible */
     color: white;
-    font-size: 24px;
+   /* font-size: 24px;*/
+   /* updating font-size to rem 1.5 x 16 = 24 */
+   font-size: 1.5rem;
+
+   /* adidng padding to add space between the border and content */
+   /* 1em = 1 x 24 = 24px */
+   padding: 1em;
+
+   /* adding width using viewport width unit */
+   width: 50vw;
 
 }
 .large-text{
@@ -172,3 +181,32 @@ footer.site-footer {
     background-color: lightgreen;
 }
 
+/* CSS Box Model */
+section p {
+    width: 50%;
+    
+    /* padding: 1em;  */
+    /* top right bottom left */
+    /* padding: 1em .5em 1em .5em */
+
+    /* top-bottom left-right */
+    padding: 1em .5em;
+
+    /* 2em = 2x16 = 32 px */
+    /* margin: 2em; */
+
+    /* top rigth bottom left */
+    margin: -1em 2em 2em 2em;
+
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+}
+
+/* Adding borders as separators */
+aside ul li {
+    border-bottom: 1px solid black;
+}
+
+aside ul li:last-child{
+    border: none;
+}
