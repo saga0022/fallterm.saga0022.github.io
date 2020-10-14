@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* selecting multiple elements */
+/* adding colors on both */
+header,
+footer {
+    background-color: gold;
+}
+
+/* adding color only on the title */
+.site-title{
+    color: dimgray;
+}
+
+/* adding border in my image */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* changing nav bullets to square */
+nav ul {
+    list-style: none;
+    background-color: da;
+}
+
+/* Styling Navigation */
+nav ul a,
+nav ul a:link {
+    text-decoration: none;
+    background: aliceblue;
+    border: 1px solid black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    background-color: goldenrod;
+}
+
+article aside li:nth-child(odd) {
+    background-color: gold;
+}
+
+aside li {
+    list-style: square;
+}
