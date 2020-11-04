@@ -1,16 +1,179 @@
+/* changing font and color of the html */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
+/* centering the body */
+/* changing background color of the center body */
 .container {
-    width: 500px;
+    max-width: 1048px;
     margin: 0 auto;
+    background-color: rgba(255,255,255,0.4);
+    position: relative;
+    width: 100%;  
+  }
+  
+.container h1 {
+    margin-top: 0;
+  }
+/* HEADER*/
+
+h1 {
+    /* positining the h1 in the center  */
+    position: relative;
+    /* adding background image in h1 */
+    background: url(../images/lone-starfish-wide.jpg)no-repeat center center;
+    background-size: cover;
+    /* aditional style to make text visible */
+    color: white;
+    /* updating font size */
+    font-size: 3.5em;
+    /* updating text allignment */
+    text-align: center;
+    font-weight: inherit;
+    /* adding padding to add space between the border and content */
+    padding: 3em 1em 1.5em 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* NAVIGATION */
+
+/* removing circles style */
+nav ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 00px;
+}
+
+/* updating the padding, color,font size, alignment, and style of the navigation */
+nav ul a {
+    padding: 1em;
+    display: block;
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase ;
+    
+}
+
+/* when hover the navigation background color will change */
+nav ul a:hover,
+nav ul a:focus {
+    background: black ;
+    color: white;
+}
+nav ul li {
+    /* placing all nav button to tha left of the paragraph content  */
+    float: left;
+    /* adding width to fit the nav in one line */
+    width: 33.3%;
+    
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
+/* removing last border line */
+nav ul li:last-child {
+    border: none;
+}
+
+/* ARTICLE */
+article,
+aside {
+    margin: 1em 0em 0em .5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: inherit;
+    margin: 2em 1em .5em 0em;
 }
 
 img {
-    width: 200px;
+    width: 26%;
     float: left;
+    margin: 0em 1em 1.5em 0em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: inherit;
+    margin: 0 auto;
+}
+
+/* ARTICLE-h3-list */
+article ul {
+    padding-left: 20px;
+}
+
+/* FORM */
+form {
+    border: 1px solid black;
+    padding: 2em 1em 1em 1em;
+    font-size: 1.1em;
+}
+
+/* updating the margin of the form */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0em 1em 0em;
+}
+
+/* resizing the input form */
+textarea {
+    resize: vertical;
+    height: 6em;
+}
+
+h4 {
+    font-weight: inherit;
+}
+
+button {
+    border: 1px solid black;
+    padding: 1em;
+    text-transform: uppercase;
+    background: inherit;
+    margin-top: 1.5em;
+}
+
+/* FOOTER */
+  
+body div.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 2em 1em 2em 1em;
+    text-align: right;
+}
+
+/* footer {
+    padding: 3em 0em 0em 0em;
+    text-align: right;
+} */
+
+/* BACKTOTOP */
+
+.tothetop {
+    position: fixed;    
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.tothetop a {
+    background-color: inherit;
+    color: black;
+    font-size: 1.5em;
+    padding-right: 10em;
 }
