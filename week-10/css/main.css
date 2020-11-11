@@ -324,6 +324,21 @@ p {
     color: white;
   }
 
+  /* Navigation */
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list li {
+    flex: 1;
+    border: none;
+    border-right: 1px solid grey;
+  }
+
+  .nav-list li:last-child {
+    border: none;
+  }
+
   /* app section */
   .app img {
     width: 40%;
@@ -333,5 +348,11 @@ p {
 
   .app .btn {
     float: right;
+  }
+
+  @media screen and (min-width: 800px) {
+    .action-list li {
+      max-width: 20%;
+    }
   }
 }
