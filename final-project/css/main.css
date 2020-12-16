@@ -1,3 +1,4 @@
+/* Adding CSS reset code */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,86 +48,420 @@ table {
 	border-spacing: 0;
 }
 
-/* ---------------------CUSTOM STYLE---------------------- */
-
-html {
+/* -- CUSTOM SYLEs -- */
+html{
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
     box-sizing: border-box;
 }
 
-body {
-    line-height: 1.5;
-  }
-
 *,
 *::after,
-*::before {
-  box-sizing: inherit;
-  line-height: inherit;
+*::before{
+    box-sizing: inherit;
+    line-height: inherit;
 }
-
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
 }
-
-a,
-a:link,
-a:visited {
-  color: inherit;
-}
-
-a:hover,
-a:focus {
-  color: #c78c06;
+img{
+    width: 100%;
 }
 
 h1,
-h2,
+h2, 
 h3,
-h4 {
-  font-weight: bold;
-  /* top left-right bottom */
-  margin: 1em 0 0.5em;
+h4,
+h5{
+    margin: 1em 0 0.5em;
+    font-weight: bold;
 }
 
-/* Modular Scale https://www.modularscale.com/?1&rem&1.5 */
-h1 {
-    font-size: 5.063rem;
-}
-  
-h2 {
+h1{
     font-size: 3.375rem;
 }
-  
-h3 {
+h2{
+    font-size: 3.375em;
+}
+h3{
     font-size: 2.25rem;
 }
-  
-h4 {
+h4{
+    font-size: 1.5rem;
+}
+h5{
     font-size: 1rem;
 }
 
-.container {
+p{
+    margin: 1em 0;
+    font-size: 14px;
+}
+.im{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ---------------- Moblie ------------------ */
+
+.container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
-  }
+}
 
-/* banner */
-.banner {
-    height: 600px;
-    background:url("../images/main-banner.jpg") no-repeat center bottom;
-    background-size: cover;
-  }
+/* Navigation */
+.logo{
+    width: auto;
+    display: flex;
+}
+.active{
+    color: #222;
+    background-color: #c78c06;
+}
+.main-nav{
+    background-color: #222;
+    padding: 1em;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+}
+.nav-list li{
+    background-color: #222;
+    text-align: center;
+}
+li a{
+    color: #c78c06;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current{
+    background-color: #c78c06;
+    color: #222;
+}
+.nav-list li:nth-child(1){
+    color: #222;
+    background-color: #c78c06;
+}
 
-  .welcome {
-    background-color: rgb(0, 0, 0 , 6);
+input[type=text] {
+    padding: 14px;
     margin: 0;
-    color: white;
-    /* padding-top: 150px; */
-    /* text-align: center; */
+    width: 80%;
+  }
+  
+ button {
+    padding: 10px;
+    background: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    margin: 0;
   }
 
- 
+
+.banner{
+    height: 600px;
+    background: url("../image/main-banner.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.bannerinfo{
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    padding: 1em;
+}
+.banner h1{
+    color: white;
+}
+.banner p{
+    color: white;
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+/* About us */
+.aboutus{
+    background-color: #ffe6ac;
+}
+
+/* Our services */
+
+.digital, 
+.market,
+.video,
+.webdev,
+.print{
+    background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+.ourservices{
+    padding: 1em;
+}
+.ourservices h3{
+    margin-top: 0;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 17px;
+    background-color:#222;
+    color: white;
+}
+
+/* Our vision */
+.vision{
+    background: url("../image/vision.jpg") no-repeat center;
+    background-size: cover;
+}
+
+h4{
+    color: white;
+}
+
+.vision p{
+    color: white;
+}
+
+.bn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: #132842;
+    color: white;
+}
+
+/* Our Team */
+.john,
+.bob{ 
+    background-color: #ffe6ac;
+}
+.aboutjohn,
+.aboutbob{
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #ffe6ac;
+}
+hr{
+    border: 1px solid #c78c06;
+    margin: 0 0;
+}
+
+.name{
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0 0 0 0;
+}
+.subname{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+/* Contact Us */
+.form input[type=text]{
+    width: 100%;
+    height: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.bt{
+        border: 1px solid black;
+        background:#222;
+        color: #c78c06;
+        padding: 10px ;
+        margin: 10px 2px;
+        font-size: 1em; 
+}
+/* Making the print on the button bigger*/
+table, th, td{
+    border: 1px solid #222;
+}
+table{
+   width: 100%;
+   border-collapse: collapse;
+}
+th{
+    text-align: center;
+    padding: 1em;
+    background-color: #ffe6ac;
+}
+td{
+    padding: 1em;
+}
+
+/* Designing the footer */
+.site-footer{
+    background-color: #222;
+    color: #c78c06;
+    padding: 1em;
+}
+
+
+/* ----------------
+        Desktop
+--------------------- */
+@media screen and (min-width: 760px){
+    /* Using flexbox on the nav. */
+    .main-nav{
+        background-color: #222;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+       justify-content: space-evenly;
+       align-items:center ;
+        padding: 1em;
+    }
+    .nav-list a{
+        text-align: center;
+    }
+    .nav-list li:nth-child(1),
+    .nav-list li:nth-child(2){
+    background-color: transparent;
+    }
+    .active{
+        background-color: #222;
+        color: #c78c06;
+    }
+    input[type=text] {
+        width: auto;
+      }
+      h1{
+          font-size: 5.063rem;
+      }
+    /* Making the about us to float to the left  and center it*/
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .img{
+        width: 35%;
+        float: left;
+        margin: 0 1em 1em 0;
+    }
+    .about h2{
+        margin: 0 0 0 0;
+    }
+    /* Adding a grid to the service */
+    .service .container{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 1em;
+        grid-template-areas: 
+        "header header header header header header"
+        "digital digital market market market"
+        "video video webdev webdev print print"
+        
+        ;
+    }
+    .service h2{
+        grid-area: header;
+    }
+    .service .digital{
+        grid-area: digital;
+    }
+    .service .market{
+        grid-area: market;
+    }
+    .service .video{
+        grid-area: video;
+    }
+    .service .webdev{
+        grid-area: webdev;
+    }
+    .service .print{
+        grid-area: print;
+    }
+    /* Adding a grid to our team */
+    .team .container{
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,auto );
+        grid-template-areas: 
+        "header hearder"
+        "john aboutjohn"
+        "aboutbob bob"
+        ;
+        
+    }
+    .team .container h2{
+        grid-area: header;
+    }
+    .john{
+        grid-area: john;
+    }
+    .bob{
+        grid-area: bob;
+    }
+    .aboutjohn{
+        grid-area: aboutjohn;
+        margin-bottom: 0;
+    }
+    .aboutbob{
+        grid-area: aboutbob;
+        margin-bottom: 0;
+    }
+    /* Adding a grid to the contact section */
+    .contact .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,auto );
+        grid-template-areas: 
+        "header hearder"
+        "form location"
+        "hours hours"
+        ;
+    }
+    .contact .container h2{
+        grid-area: header;
+    }
+    .form{
+        grid-area: form;
+    }
+    .location{
+        grid-area:location;
+    }
+    .hours{
+        grid-area: hours;
+    }
+    .form input[type=text]{
+       width: 98%;
+    }
+    .form textarea{
+        width: 98%;
+    }
+}

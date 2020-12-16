@@ -23,148 +23,196 @@
             <!-- navigation -->
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><img src="images/logo.png" alt="site-logo"></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><img src="images/logo.png" alt="site-logo" class="logo"></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>
+                    <li> 
                         <input type="text" placeholder="Search">
-                        <button class="button1">
+                        <button type="submit">
                             <i class="im im-magnifier"></i>
                         </button>
                     </li>
                 </ul>
             </nav>
+
             <div class="banner">
-                <div class="welcome">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ex expedita officia molestiae nisi itaque voluptatibus dicta harum ad mollitia sunt odit omnis consequatur ullam. Quis laudantium fuga sunt dolor!</p>
-                    <button class="button2">
-                        Connect with us
-                    </button>
+                <div class="container">
+                    <div class="bannerinfo">
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ex expedita officia molestiae nisi itaque voluptatibus dicta harum ad mollitia sunt odit omnis consequatur ullam. Quis laudantium fuga sunt dolor!</p>
+                        <a href="#" class="button">Connect with us</a><i class="im im-play"></i>
+                    </div>
                 </div>
             </div>
         </header>
+
         <main class="content">
-        <!---------------------- ABOUT US ----------------------->
-            <section id="aboutus">
-                <div class="aboutcontent">
-                    <h2>About Us</h2>
+
+        <!-- ABOUT US -->
+
+            <section id="aboutus" class="app clearfix">
+                <div class="content clearfix">
                     <img src="images/about-us.jpg" alt="table">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea optio, dolorum neque vel aliquam incidunt quam quo repellat similique expedita possimus saepe labore molestiae natus, est aperiam reprehenderit odit eum?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid minima. Saepe praesentium, laborum facilis nemo veritatis quibusdam, incidunt dolorem sit quam minima ipsa fugiat ab nobis ratione! Nam, quisquam?</p>
+                    <div class="aboutcontent">
+                        <h2>About Us</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea optio, dolorum neque vel aliquam incidunt quam quo repellat similique expedita possimus saepe labore molestiae natus, est aperiam reprehenderit odit eum?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, aliquid minima. Saepe praesentium, laborum facilis nemo veritatis quibusdam, incidunt dolorem sit quam minima ipsa fugiat ab nobis ratione! Nam, quisquam?</p>
+                    </div>
                 </div>
             </section>
 
-        <!---------------------- OUR SERVICES ----------------------->
-            <section id="services">
-                <h2>Our Services</h2>
-                <div class="ourservices">
-                    <img src="images/digital.jpg" alt="digital">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
-                    <a href="#" class="btn">Digital Plans</a><i class="im im-play"></i>
-                </div>
+        <!-- OUR SERVICES -->
 
-                <div class="ourservices">
-                    <img src="images/marketing.jpg" alt="marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
-                    <a href="#" class="btn">Marketing Plans</a><i class="im im-play"></i>
-                </div>
-
-                <div class="ourservices">
-                    <img src="images/video.jpg" alt="video">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
-                    <a href="#" class="btn">Video Plans</a><i class="im im-play"></i>
-                </div>
-
-                <div class="ourservices">
-                    <img src="images/web.jpg" alt="web">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
-                    <a href="#" class="btn">Web Plans</a><i class="im im-play"></i>
-                </div>
-
-                <div class="ourservices">
-                    <img src="images/print.jpg" alt="print">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
-                    <a href="#" class="btn">Print Plans</a><i class="im im-play"></i>
-                </div>
-            </section>
-
-            <!---------------------- OUR TEAM ----------------------->
-            <section id="team">
-                <h2>Our Team</h2>
-                <div class="ourteam">
-                    <img src="images/john.jpg" alt="john">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi placeat repellat suscipit aut modi sed! Vel laudantium omnis voluptatibus cumque odio, hic magni assumenda facere eveniet, ad accusamus quam.</p>
-                </div>
-                
-                <div class="ourteam">
-                    <img src="images/bob.jpg" alt="bob">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi placeat repellat suscipit aut modi sed! Vel laudantium omnis voluptatibus cumque odio, hic magni assumenda facere eveniet, ad accusamus quam.</p>
-                </div>
-            </section>
-
-            <!---------------------- CONTACT US ----------------------->
-            <section id="contactus">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form action="thanks.html" method="GET">
-                    <div>
-                        <label for="fullname">Your Name</label>
-                        <input type="text" id="fullname" name="fullname">
-                    </div>
-                    <div>
-                        <label for="youremail">Your Email</label>
-                        <input type="email" id="youremail" name="youremail" required>
-                    </div>
-                    <div>
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message"></textarea> 
-                    </div>
-                      <button type="submit">Send</button>
-                </form>
-                <h2>Hours of operation</h2>
-                <table class="container">
-                    <thead>
-                      <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                      </tr>
-                      <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                      </tr>
-                    </tbody>
-                </table>
+            <section id="services" class="services">
                 <div class="container">
-                    <h2>Location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6157.977425998415!2d-75.76014512683236!3d45.34997286634253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718c5998a3b%3A0x78382f39c3e19269!2sAlgonquin%20College%20Residence!5e0!3m2!1sen!2sca!4v1606313026551!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    <h2>Our Services</h2>
+                    <div class="digital">
+                        <img src="images/digital.jpg" alt="digital">
+                        <div class="ourservices">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
+                            <a href="#" class="btn">Digital Plans<i class="im im-play"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="market">
+                        <img src="images/marketing.jpg" alt="marketing">
+                        <div class="ourservices">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
+                            <a href="#" class="btn">Marketing Plans<i class="im im-play"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="video">
+                        <img src="images/video.jpg" alt="video">
+                        <div class="ourservices">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
+                            <a href="#" class="btn">Video Plans<i class="im im-play"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="webdev">
+                        <img src="images/web.jpg" alt="web">
+                        <div class="ourservices">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
+                            <a href="#" class="btn">Web Plans<i class="im im-play"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="print">
+                        <img src="images/print.jpg" alt="print">
+                        <div class="ourservices">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quas facere dolorum officia delectus adipisci cupiditate eum omnis vitae, impedit provident perspiciatis ad minima temporibus laudantium, vel, labore magni suscipit.</p>
+                            <a href="#" class="btn">Print Plans<i class="im im-play"></i></a>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <!-- OUR VISION -->
+
+            <section id="vision">
+                <div class="container">
+                    <h4>Our Vision</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem minus cum reiciendis veritatis eligendi ad asperiores alias nulla atque soluta perspiciatis adipisci commodi itaque distinctio, beatae, quidem fugit maiores corrupti?</p>
+                    <a href="#" class="bn">Learn More<i class="im im-play"></i></a>
+                </div>
+            </section>
+
+
+            <!-- OUR TEAM -->
+
+            <section id="team" class="team">
+                <div class="container">
+                    <h2>Our Team</h2>
+                    <div class="john">
+                        <img src="images/john.jpg" alt="john">
+                    </div>
+                    
+                    <div class="aboutjohn">
+                        <p class="name">John Doe</p> 
+                        <p class="subname">CEO and Co-owner</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi placeat repellat suscipit aut modi sed! Vel laudantium omnis voluptatibus cumque odio, hic magni assumenda facere eveniet, ad accusamus quam.</p>
+                    </div>
+                        
+                    <div class="bob">
+                        <img src="images/bob.jpg" alt="bob">
+                    </div>
+
+                    <div class="aboutbob">
+                        <p class="name">Bob Rite</p>
+                        <p class="subname">CFO and Co-owner</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi placeat repellat suscipit aut modi sed! Vel laudantium omnis voluptatibus cumque odio, hic magni assumenda facere eveniet, ad accusamus quam.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT US -->
+           
+            <section id="contactus" class="contactus">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <div class="form">
+                        <h5>Send us a message</h5>
+                        <form action="thanks.html" method="GET">
+                            
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname">
+                            
+                            
+                            <label for="youremail">Email</label>
+                            <input type="email" id="youremail" name="youremail" required>
+                            
+                            
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea> 
+
+                            <button type="submit" class="bt">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="hours">
+                        <h5>Hours of operation</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="location">
+                        <h5>Location</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6157.977425998415!2d-75.76014512683236!3d45.34997286634253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718c5998a3b%3A0x78382f39c3e19269!2sAlgonquin%20College%20Residence!5e0!3m2!1sen!2sca!4v1606313026551!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </section>
+
+
             <footer class="site-footer">
-                <div class="container">
                   <p> &copy;Copyright Three Star Media, 2020</p>
                   <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
-                </div>
               </footer>
         </main>
     </div>  
